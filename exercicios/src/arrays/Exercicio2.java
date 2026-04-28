@@ -19,7 +19,7 @@ public class Exercicio2 {
 		System.out.println(notasAlunoA[notasAlunoA.length - 1]);
 		
 		double totalAlunoA = 0;
-		//for(int i = 0; i < notasAlunoA.length; i++) {
+		for(int i = 0; i < notasAlunoA.length; i++) {
 			totalAlunoA += notasAlunoA[i];
 		}
 		
@@ -29,7 +29,7 @@ public class Exercicio2 {
 		double[] notasAlunoB = { 6.9, 8.9, notaArmazenada, 10};
 		
 		double totalAlunoB = 0;	
-		//for (int i = 0; i < notasAlunoB.length; i ++) {
+		for (int i = 0; i < notasAlunoB.length; i ++) {
 			totalAlunoB += notasAlunoB[i];
 		}
 		
