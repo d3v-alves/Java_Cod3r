@@ -1,17 +1,17 @@
-package oo.composicao;
+package oo.composicao.desafio;
 
 import java.util.ArrayList;
 
-public class Compra {
+public class Compra1 {
 
 	String cliente;
-	ArrayList<Item> itens = new ArrayList<Item>();
+	ArrayList<Item1> itens = new ArrayList<Item1>();
 	
 	void adicionarItem(String nome, int quantidade, double preco) {
-		this.adicionarItem(new Item(nome, quantidade, preco));
+		this.adicionarItem(new Item1(nome, quantidade, preco));
 	}
 	
-	void adicionarItem(Item item) {
+	void adicionarItem(Item1 item) {
 		this.itens.add(item);
 		item.compra = this;
 	}
@@ -19,7 +19,7 @@ public class Compra {
 	double getValorTotal() {
 		double total = 0;
 		
-		for(Item item: itens) {
+		for(Item1 item: itens) {
 			total += item.quantidade * item.preco;
 		}
 		

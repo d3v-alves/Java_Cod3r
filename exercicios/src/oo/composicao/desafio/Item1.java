@@ -1,13 +1,13 @@
-package oo.composicao;
+package oo.composicao.desafio;
 
-public class Item {
+public class Item1 {
 
 	String nome;
 	int quantidade;
 	double preco;
-	Compra compra;
+	Compra1 compra;
 	
-	Item(String nome, int quantidade, double preco) {
+	Item1(String nome, int quantidade, double preco) {
 		this.nome = nome;
 		this.quantidade = quantidade;
 		this.preco = preco;

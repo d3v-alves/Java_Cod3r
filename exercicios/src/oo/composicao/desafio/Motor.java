@@ -1,4 +1,4 @@
-package oo.composicao;
+package oo.composicao.desafio;
 
 public class Motor {
 
