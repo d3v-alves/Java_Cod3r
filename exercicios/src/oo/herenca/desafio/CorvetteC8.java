@@ -1,9 +1,13 @@
 package oo.herenca.desafio;
 
 public class CorvetteC8 extends Carro{
-
-	@Override
-	void acelerar() {
-		velocidadeAtual += 15;
+	
+	CorvetteC8() {
+		this(315);
+	}
+	
+	CorvetteC8(int velocidadeMaxima) {
+		super(velocidadeMaxima);
+		delta = 350;
 	}	
 }
