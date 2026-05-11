@@ -13,14 +13,17 @@ public class CarroTeste {
 		c1.acelerar();
 		System.out.println(c1);
 		
-		c1.acelerar();
+		c1.acelerar();  
 		System.out.println(c1);
 
 		c1.acelerar();
 		System.out.println(c1);
 		
-		Carro c2 = new CorvetteC8(400);
-				
+		CorvetteC8 c2 = new CorvetteC8(400);
+		c2.ligarTurbo();
+		c2.ligarAr();
+		c2.desligarAr();
+		
 		c2.acelerar();
 		c2.frear();
 		System.out.println(c2);
