@@ -37,6 +37,4 @@ public class Carro {
 	public void setDelta(int delta) {
 		this.delta = delta;
 	}
-	
-	
 }

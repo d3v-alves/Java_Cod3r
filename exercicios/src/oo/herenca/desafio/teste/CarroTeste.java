@@ -22,7 +22,9 @@ public class CarroTeste {
 		CorvetteC8 c2 = new CorvetteC8(400);
 		c2.ligarTurbo();
 		c2.ligarAr();
-		c2.desligarAr();
+		c2.desligarAr(); 
+		
+		System.out.println(c2.velocidadeDoAr());
 		
 		c2.acelerar();
 		c2.frear();
