@@ -1,8 +1,4 @@
-package oo.herenca.desafio.teste;
-
-import oo.herenca.desafio.Carro;
-import oo.herenca.desafio.CorvetteC8;
-import oo.herenca.desafio.LancerEvoX;
+package oo.herenca.desafio;
 
 public class CarroTeste {
 
