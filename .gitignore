@@ -1,7 +1,7 @@
 .metadata/
 .recommenders/
-bin/
+**/bin/
 *.class
-.settings/
+**/.settings/
 .project
 .classpath
