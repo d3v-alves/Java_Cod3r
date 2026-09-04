@@ -22,9 +22,9 @@ public class Field {
 	}
 
 	boolean addNeighbors(Field neighbor) {
-		boolean differenteLine = line != neighbor.line;
+		boolean differentLine = line != neighbor.line;
 		boolean differenteColumn = column != neighbor.column;
-		boolean diagonal = differenteLine && differenteColumn;
+		boolean diagonal = differentLine && differenteColumn;
 
 		int deltaLine = Math.abs(line - neighbor.line);
 		int deltaColumn = Math.abs(column - neighbor.column);
@@ -73,8 +73,16 @@ public class Field {
 		undermined = true;
 	}
 
+	public boolean isUndermined() {
+		return undermined;
+	}
+
 	public boolean isMarked() {
 		return marked;
+	}
+
+	void setOpen(boolean open) {
+		this.open = open;
 	}
 
 	public boolean isOpen() {
@@ -99,24 +107,24 @@ public class Field {
 		return unraveled || protectedd;
 	}
 
-	long mineOnTheNeighborhood() {
-		return neighbors.stream().filter(v -> v.undermined).count();
+	long countMinesInNeighborhood() {
+		return neighbors.stream().filter(neighbor -> neighbor.undermined).count();
 	}
-	
+
 	void restart() {
 		open = false;
 		undermined = false;
 		marked = false;
 	}
-	
+
 	public String toString() {
-		if(marked) {
+		if (marked) {
 			return "x";
-		} else if(open && undermined) {
+		} else if (open && undermined) {
 			return "*";
-		} else if(open && mineOnTheNeighborhood() > 0) {
-			return Long.toString(mineOnTheNeighborhood());
-		} else if(open) {
+		} else if (open && countMinesInNeighborhood() > 0) {
+			return Long.toString(countMinesInNeighborhood());
+		} else if (open) {
 			return " ";
 		} else {
 			return "?";
